@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.bg-img{
+    height: 550px;
+    background: url("/img/flag.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    
+}
+marquee{
+    background-color: rgba(76, 15, 232, 0.559);
+    color: white;
+   
+}
+.navbar{
+    background-color: aqua;
+    padding:10px;
+    text-align: center;
+    margin-top: -7px;
+    position: sticky;
+    top: 0px;
+}
+
+.navbar>a{
+    text-decoration: none;
+    padding: 10px;
+}
+a:hover{
+    color: lightslategray;
+}
+
+.header{
+   background-color: rgba(240, 248, 255, 0.806);
+    
+}
+.header .box-1{
+    display: inline-block;
+    /* border: 2px solid green; */
+    width: 350px;
+    height: 350px;
+    margin-left: 50px;
+}
+
+.header .box-2{
+    display: inline-block;
+    /* border: 2px solid black; */
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 454px;
+    top: 9px;
+}
+.box-2 img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50px;
+}
+p{
+    text-align: justify;
+}
+.content{
+    background-color: #80777708;
+}
+
+.footer{
+    height: 150px;
+    border: 2px solid red;
+    background-color: black;
+}

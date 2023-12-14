@@ -1,0 +1,22 @@
+<html>
+    <script>
+        // first example
+        //setInterval(() => console.log("chhaya!"), 1000)  // 3 times executed
+
+        // second example
+        /*
+        setInterval(() => {
+            let a = 1;
+            console.log("Hey! morning", a++);  // executed infinite number
+        }, 2000) */
+
+        // 3rd Example
+        let count = 0;
+        let msg = () => {
+            console.log("Blank message", count++);
+        }
+
+        let interval = setInterval(msg, 1000)
+        // setTimeout(() => { clearInterval(interval)}, 3000)
+    </script>
+</html>

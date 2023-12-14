@@ -1,0 +1,27 @@
+.content{
+    background-color: aliceblue;
+    color: blue;
+    width: 40px;
+    padding: 35px;  
+    margin-right: 30px; 
+}
+.c{
+    background-color: red;
+    width: 90px;
+    padding: 50px;
+    color: white;
+}
+
+.b{
+    background-color: aqua;
+    width: 200px;
+    padding: 60px;
+    color: red;
+}
+
+.a{
+    margin: 120px;
+    width: 310px;
+    background-color: bisque;
+    padding: 40px;
+}

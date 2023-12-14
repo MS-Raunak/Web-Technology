@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Parameter</title>
+</head>
+<body>
+    <h1>Default Parameter</h1>
+    <p>- Introduced in JavaScript ES-6 Version <br>
+       - Whenever we call a parametrized function with less number of arguments then we use default value for performing a task.</p>
+
+    <!-- Script Code -->
+    <script>
+
+        function add(n1=1, n2){
+            let result = n1 + n2;
+            return result;
+        }
+        let res = add();
+        console.log(res); // undefined (number+undefined = NaN)
+
+
+        function add1(n1=1, n2=2){
+            let result = n1 + n2;
+            console.log(result);
+        }
+        add1(2);
+
+    
+    </script>
+</body>
+</html>

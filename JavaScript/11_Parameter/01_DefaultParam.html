@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Default Parameter</title>
+</head>
+<body>
+    <h1>Default Parameter</h1>
+    <p>- Introduced in JavaScript ES-6 Version <br>
+       - Default parameter is a parameter inside function prototype.
+       - Actual parameter with default value is known as default parameter</p>
+
+    <!-- Script Code -->
+    <script>
+
+        let a = 10;
+        let b = 20;
+
+        function add(n1=1, n2=2){
+            let result = n1 + n2;
+            return result;
+        }
+        let res = add();
+        console.log(res);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add & Subtraction without using Event</title>
+</head>
+<body>
+    <button id="add">Addition</button>
+    <button id="sub">Subtraction</button>
+
+    <h1>
+        Sum:-
+        <span id="result"></span>
+    </h1>
+
+    <!-- script code -->
+    
+    <script>
+
+        // Getting ID
+        let getAddId = document.getElementById("add");
+        let getSubId = document.getElementById("sub");
+        let getResultId = document.getElementById("result");
+       
+
+
+        // Performing addition function
+        getAddId.addEventListener('click', () =>{
+            let a = 22;
+            let b = 20;
+            getResultId.innerText = a+b;
+        })
+
+        // Performing Subtraction function
+        getSubId.addEventListener('click', () => {
+            let a = 50;
+            let b =20;
+            getResultId.innerText = a-b;
+        })
+    </script>
+</body>
+</html>

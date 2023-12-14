@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web storage</title>
+</head>
+<body>
+    <h2>Web storage Part-2</h2>
+    <div>
+        <button id="minus-btn">Decrement</button>
+        <span id="display">0</span>
+        <button id="plus-btn">Increment</button>
+    </div>
+
+    <!-- Script Code -->
+    <script>
+        let minusTag = document.getElementById('minus-btn') 
+        let plusTag = document.getElementById('plus-btn') 
+        let spanTag = document.getElementById('display') 
+
+        let qty = localStorage.getItem('qty') ? localStorage.getItem('qty') : 0;
+    
+        spanTag.innerText = qty;
+
+        plusTag.addEventListener('click', function()
+        {
+            qty++;
+            localStorage.setItem('qty', qty);
+            spanTag.innerText = localStorage.getItem('qty')
+        })
+
+
+        minusTag.addEventListener('click', function()
+        {
+            if(qty>1){
+                qty--;
+                localStorage.setItem('qty', qty);
+                spanTag.innerText = localStorage.getItem('qty')
+            }
+            else{
+                qty = 1;
+                spanTag.innerText = qty;
+            }
+        })
+    </script>
+</body>
+</html>

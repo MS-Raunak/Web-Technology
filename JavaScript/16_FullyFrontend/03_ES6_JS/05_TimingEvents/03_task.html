@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing event</title>
+    <style>
+        .div {
+            text-align: center;
+        }
+
+        #change-bg {
+            margin: auto;
+            height: 300px;
+            width: 450px;
+            /* background: #000; */
+            border: 2px solid red;
+        }
+
+        h2 {
+            color: red;
+            padding: 37px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <div id="change-bg"></div>
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="stop">Stop</button>
+    </div>
+
+    <script>
+        let bgColor = document.getElementById('change-bg')
+        let startBtn = document.getElementById('start')
+        let pauseBtn = document.getElementById('pause')
+        let stopBtn = document.getElementById('stop')
+        let count = 1;
+
+        let interval;
+        startBtn.addEventListener('click', () => {
+            interval = setInterval(change, 1000);
+        })
+
+        let i = 0;
+        var color = ["black", "blue", "red", "green"];
+        
+        function change() {
+            bgColor.style.backgroundColor = color[i];
+            i = (i + 1) % color.length;
+            if(i==4) i=0;
+        }
+
+        let flag = true;
+        pauseBtn.addEventListener('click', () => {
+            if(flag==true) {
+                clearInterval(interval)
+                flag = false
+                pauseBtn.innerText = "Resume"
+            }
+            else if(flag==false) {
+                pauseBtn.innerText = "Pause"
+                setInterval(change, 1000)
+            }
+        })
+
+        stopBtn.addEventListener('click', () => {
+            color = []
+            bgColor.style.backgroundColor = "white"
+        })
+        
+
+
+
+
+
+    </script>
+</body>
+
+</html>

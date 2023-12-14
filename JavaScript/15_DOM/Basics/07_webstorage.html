@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Web storage</title>
+    <!-- Web storage nothing but storing data in current browser
+        Types(Local Storage, Session Storage) and correspnding method are following:-
+        getItem(key,value)
+        getItem(key)
+        removeItem(key)
+        clear() 
+    -->
+</head>
+<body>
+    <h2>Web Storage</h2>
+
+    <!-- Script Code -->
+    <script>
+        
+        // localStorage() => storing permanently
+        let empName = "chhaya";
+        localStorage.setItem('eName', empName)                   // set data in storage
+        let employeeName = localStorage.getItem('eName')         // get data from storage
+        console.log(employeeName)
+
+
+         // sessionStorage() => storing temporarily
+         let stuName = "Shanaya";
+         sessionStorage.setItem("sName", stuName)
+         let studentName = sessionStorage.getItem('sName'); 
+         console.log(studentName)
+
+         clear.localStorage('eName'); // clear database
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Keyword</title>
+</head>
+<body>
+    <h1>This Keyword</h1>
+    <p>this keyword in javaScript is used to point the current value or item</p>
+
+
+    <!-- Script Code -->
+    <script>
+
+        // case-1:
+        let a = 20;
+        console.log(a);
+        console.log(this); // point to the window obj
+        console.log(this.a) // undefined: no such type of variable declared in windows object
+
+        // case-2:
+        function main(){
+            console.log(this.a) // undefined
+        }
+        main();
+
+        // case-2:
+        if(true){
+            console.log(this.a) // undefined
+        }
+
+
+    </script>
+</body>
+</html>

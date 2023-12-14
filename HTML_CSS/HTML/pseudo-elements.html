@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        /* .container>h1::first-letter{
+            color: red;
+            font-size: 3rem;
+        } */
+        .container>p::first-line{
+            background: #000;
+            color: #ffff;
+            font-size: 2rem;
+        }
+        .container>h1::before{
+            content: "Banglore";
+            background-color: yellow;
+            color: red;
+        }
+        .container>h1::after{
+            content: " ";
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+            border-left: 10px solid red;
+            border-top: 10px solid red;
+            position: relative;
+            top: 0px;
+            left: -290px;
+        }
+        .container>p::selection{
+            background-color: green;
+            color: yellow;
+        }
+        .container>ul>li::marker{
+            font-size: 40px;
+        }
+        .transition-border{
+            height: 200px;
+            width: 300px;
+            /* background-color: aqua; */
+            background: url(/img/flag.jpg) no-repeat;
+            border: 2px solid ;
+            box-shadow:0px 0px 10px black;
+            box-sizing: border-box;
+            background-position: center;
+            position: relative;
+            left: 670px;
+            top: -150px;  
+
+        }
+        .transition-border h2{
+            text-align: center;
+            margin-top:30px;
+            text-shadow: 0px 19px 5px;
+        }
+        .transition-border #orange{
+            color: orange;
+        }
+        .transition-border #green{
+            color: green;
+        }
+        ul::after{
+            content: "";
+            border-left: 10px solid red;
+            border-top: 10px solid red;
+            position: relative;
+            left: 610px;
+            top: -100px;
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+        }
+
+        ul::after{
+            content: "";
+            border-left: 10px solid red;
+            border-top: 10px solid red;
+            position: relative;
+            left: 610px;
+            top: -100px;
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+        }
+        ul::before{
+            content: "";
+            border-right: 10px solid red;
+            border-bottom: 10px solid red;
+            position: relative;
+            left: 900px;
+            top: 350px;
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JSPIDERS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum delectus aliquid amet qui minima iusto numquam incidunt, error consectetur!</p>
+
+        <ul>
+            <li>ABC</li>
+            <li>ABC</li>
+            <li>ABC</li>
+            <li>ABC</li>
+            <li>ABC</li>
+        </ul>
+    </div>
+
+    <div class="transition-border">
+        <h2>
+            <span id="orange">JAI</span>
+            <span id="green">HIND</span>
+        </h2>
+    </div>
+</body>
+</html>

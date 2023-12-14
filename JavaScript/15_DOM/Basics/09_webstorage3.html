@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        localStorage.clear()
+        let student = {name: "Chhaya", gender: "female", age: 2}
+        localStorage.setItem('stud', JSON.stringify(student))
+        let data =  localStorage.getItem('stud')
+
+        // console.log(data, typeof data)
+        // console.log(JSON.parse(data).name)
+        // localStorage.removeItem('stud')
+        
+    </script>
+</body>
+</html>

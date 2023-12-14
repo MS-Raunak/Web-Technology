@@ -1,0 +1,33 @@
+#a{
+    background-color: rgb(18, 8, 8);
+    width: 40px;
+    padding: 30px 60px 30px 60px;
+    color: yellow;
+
+   
+    /* border-top: 5px solid yellow;
+    border-right: 5px dotted blue;
+    border-bottom: 5px dashed green;
+    border-left: 5px dotted yellow; */
+
+    border: 5px solid green;
+    /* border-radius: 0px 20px 0px 20px; */
+    /* border-radius: 8px; */
+    border-radius: 100%;
+
+    margin-left: 200px;
+    
+
+}
+
+#b{
+    background-color: blue;
+    color: white;
+    margin-top: 50px;
+    width: 40px;
+    padding: 30px;
+    /* border: 10px double red; */
+    /* border: 10px double red; */
+    /* border: 10px groove red; */
+    border: 10px inset red;
+}

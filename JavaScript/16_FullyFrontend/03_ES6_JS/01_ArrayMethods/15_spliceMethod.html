@@ -1,0 +1,33 @@
+<html>
+    <script>
+        let num = [10,20,30,40,50];
+
+        // with no arg: return empty array
+        let res= num.splice();
+        console.log(res);  // []
+        console.log(num);  // [10, 20, 30, 40, 50]
+
+        // with 1 args: return removed items as an array
+        res = num.splice(1)
+        console.log(res);  // [20,30,40,50] 
+        console.log(num);  // [10]=>deleted items 
+
+        // with 2: args
+        let arr = [5,4,3,2,1];  
+        let res1 = arr.splice(1,2); 
+        console.log(res1); //[4,3]
+
+        //with 3 args: return removed items along with new added items as an array
+        let arr2 = [1,2,3,4,5,6];
+        let res2 = arr2.splice(1,2,100) // 1st ele and after 3rd index element will be removed, last will be added with deleted element
+        console.log(res2);  // [2,3]
+        console.log(arr2);  [1,100,4,5,6]
+    </script>
+</html>
+
+/*
+*The splice() method returns the removed item(s) in an array and slice() method returns the selected element(s) in an array, as a new array object. 
+
+*The splice() method changes the original array and slice() method doesn't change the original array.
+
+*/

@@ -1,0 +1,55 @@
+Function can declare in 3 way in javascript
+
+1) Function Declaration
+=========================
+syntax:
+    functionKeyword  identifier()
+    {
+        statements
+        ----------
+        ----------
+    } 
+    functionCalling();
+
+EX: function call()
+{
+    console.log("Function called")
+}
+
+2) Function Expression
+=======================
+syntax:
+    varType varName = function()
+    {
+        statements
+        ----------
+        ----------
+    } 
+    functionCalling();
+
+EX: 
+    let a = function call()
+    {
+        console.log("Function called")
+    }
+    a();
+
+3) Arrow Function
+==================
+syntax: 
+    varType varName = () =>
+    {
+
+    }
+    functionCalling();
+
+EX:
+    let b = () =>{
+        console.log("Arrow Function")
+    }
+    b();
+
+
+* A function which is passing as an argument is known as callback function.
+* A function which is accepting another function as an argument is known as higher order function
+* A function which has default value as a parameter is known as Default Parameter. That type of function can be execute when callng the function with less parameter or no parameter but if the calling function have parameter then default value will be override.

@@ -1,0 +1,33 @@
+1.capturing phase
+<html>
+    <style>
+        .parent{
+            background-color: blue;
+            padding: 30px;
+            width: 100px;
+            margin: 20px auto;
+        }
+    </style>
+<body>
+    <div class="parent">
+        <button id="btn">Click</button>
+    </div>
+
+    <form action=""></form>
+      
+
+    <script>
+        let getParent = document.querySelector(".parent")
+        let getBtn = document.getElementById("btn")
+
+        // getParent.addEventListener('click', (event) => {
+        //     console.log("Parent Clicked")
+        // })
+
+        getBtn.addEventListener('click', (event) => {
+            console.log("Button Clicked")
+        })
+    </script>
+</body>
+
+</html>

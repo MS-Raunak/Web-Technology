@@ -1,0 +1,52 @@
+<html>
+<title>Spread Operator</title>
+<script>
+    /*let x = [10, 20, 30, 40]
+    let y = [12, 21, 31, 41]
+    console.log(...x, ...y);
+
+    let z = [...x, ...y]
+    console.log(z);
+    */
+
+
+    //  spreading an array into an object
+    /*
+    let a = { ...x }
+    console.log(a); // {0: 10, 1: 20, 2: 30, 3: 40}
+    */
+
+    /*
+    let b = [...x, 80, 90] 
+    console.log(b); //  [10, 20, 30, 40, 10, 20]
+    */
+
+    /*
+    let c = [...y]
+    console.log(c == y); // false
+    */
+
+
+// Spreading object
+let student = {
+    name : "chhaya",
+    age : 20,
+    address : "BNG"
+}
+
+let student2 = {
+    name : "shanaya",
+    age : 2,
+    address : "DPU",
+    isMarried : false
+}
+// console.log(...student); // error
+console.log(student); // {name: 'chhaya', age: 20, address: 'BNG'}
+console.log({...student}); // {name: 'chhaya', age: 20, address: 'BNG'}
+console.log({...student, ...student2}); // {name: 'shanaya', age: 2, address: 'DPU', isMarried: false}
+
+
+// It does not affect the original object
+</script>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/0_MDB/css/mdb.min.css">
+    <link rel="stylesheet" href="/0_Fontawesome/css/all.min.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+      <div class="col-md-3">
+        <input type="text" class="input px-5" id="display">
+
+        <div class="row mt-3">
+          <button class="mx-1 btn btn-secondary col" onclick="backspace()">&larr;</button>
+          <button class="mx-1 btn btn-secondary col" onclick="appendCharacter('%')">%</button>
+          <button class="mx-1 btn btn-secondary col" onclick="appendCharacter('/')">/</button>
+        </div>
+        <div class="row mt-2">
+          <button class="mx-1 btn btn-secondary col" onclick="appendCharacter('7')">7</button>
+          <button class="mx-1 btn btn-secondary col" onclick="appendCharacter('8')">8</button>
+          <button class="btn btn-secondary col" onclick="appendCharacter('9')">9</button>
+          <button class="mx-1 btn btn-secondary col" onclick="appendCharacter('*')">*</button>
+        </div>
+        <div class="row mt-2">
+          <button class="btn btn-secondary col" onclick="appendCharacter('4')">4</button>
+          <button class="mx-1 btn btn-secondary col" onclick="appendCharacter('5')">5</button>
+          <button class="mx-1 btn btn-secondary col" onclick="appendCharacter('6')">6</button>
+          <button class="mx-1 btn btn-secondary col" onclick="appendCharacter('-')">-</button>
+        </div>
+        <div class="row mt-2">
+          <button class="btn btn-secondary col" onclick="appendCharacter('1')">1</button>
+          <button class="mx-1 btn btn-secondary col" onclick="appendCharacter('2')">2</button>
+          <button class="btn btn-secondary col" onclick="appendCharacter('3')">3</button>
+          <button class="mx-1 btn btn-secondary col" onclick="appendCharacter('+')">+</button>
+        </div>
+        <div class="row mt-2">
+          <button class="btn btn-secondary col-6" onclick="appendCharacter('0')">0</button>
+          <button class="mx-1 btn btn-secondary col" onclick="appendCharacter('.')">.</button>
+          <button class="btn btn-secondary col" onclick="calculate()">=</button>
+        </div>
+        <div class="row mt-2">
+            <button class="btn btn-secondary col" onclick="clearDisplay()">Clear</button>
+        </div>
+      </div>
+    </div>
+  
+    <script src="../JS/04_calculator.js"></script>
+  </body>
+
+</html>

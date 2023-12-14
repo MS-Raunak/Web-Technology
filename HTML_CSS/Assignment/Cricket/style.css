@@ -1,0 +1,46 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+   text-align: center;
+    background:linear-gradient(90deg, red,white,green);
+}
+
+#links>a{
+    text-decoration: none;
+}
+
+h2{
+   border-radius: 100px 0 100px 0px;
+   border: 2px solid blue;
+   box-shadow: 0px 0px 40px blue;
+   color: white;
+   width: 500px;
+   margin: 40px auto;
+   padding: 10px;
+   background:linear-gradient(45deg, blue,pink,orange);
+}
+
+table{
+    width: 100%;
+}
+img{
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 8px;
+    box-shadow: 0px 0px 20px blue;
+}
+
+p{
+    text-align: justify;
+}
+
+img:hover{
+    box-shadow: 0 0 20px green;
+}
+a:hover{
+    color: red;
+   /* border-bottom: 2px solid white; */
+}

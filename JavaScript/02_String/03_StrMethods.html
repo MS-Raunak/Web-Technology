@@ -1,0 +1,41 @@
+<html>
+
+<script>
+    let str = "Shanaya"
+    // length method
+    console.log("Length method:", str.length);    // 7
+
+    // charAt() method : return char using given index number
+    console.log("charAt() method: ", str.charAt(0)); // S
+    console.log(str.charAt(1)); // h
+
+    // indexOf method : return indexNumber using given char
+    console.log("indexOf() method: ", str.indexOf('a'));  // 2
+
+    // subString() method : return a part of string from a given range (-ve range doesnt support)
+    console.log("subString() method: ", str.substring(0, 4));   // Shan(Last or 4th number doesnt included)
+    console.log("subString() method: ",str.substring(-2, 4));   // Shan(Whenever we are trying to take negative range in subString method it will internally change that value in 0 then start to reading)
+
+    // slice() method : return part of string in given range and -ve range also supported
+    console.log("slice() method: ", str.slice(0,4)) // Shan
+    console.log("slice() method: ",str.slice(-1,7)) // a
+
+    // replace() method: using when we want to replace a part of string with given string
+    const url = "https://shanya1990@20.com"
+    console.log(url);
+    console.log("replace method: ",  url.replace("@20", "ms")) // https://shanya1990ms.com
+
+
+    // trim method: to triming the begining and endng space of a string
+    const spaceString ="  hello JS  "
+    console.log("trim method: ", spaceString);
+
+    // include method : Returns boolean value based on given string
+    const str2 = "shanaya means chhaya"
+    console.log(str2.includes("chhaya"));  // true
+    console.log(str2.includes("chulbul"));  // false
+
+    // 
+    
+</script>
+</html>

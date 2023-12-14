@@ -1,0 +1,19 @@
+
+display: flex
+=============
+-Container Property
+-One dimensional Property
+
+
+Flex-Container Properties
+=========================
+display:flex;
+flex-direction:row/col/row-rev/col-rev;
+flex-wrap: wrap/no-wrap;
+
+justify-content:       ;
+align-items:    ;
+align-content: ;
+row-gap:;
+col-gap: ;
+gap: row-gap col-gap;

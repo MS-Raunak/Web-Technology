@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/0_MDB/css/mdb.min.css">
+    <link rel="stylesheet" href="/0_Fontawesome/css/all.min.css">
+    <title>Add & Remove Cart</title>
+</head>
+<body>
+    <div class="conatainer mt-5">
+        <div class="col-md-5 mx-auto">
+            <div class="row">
+                <div class="card">
+                    <div class="card-header text-center text-primary">
+                        <h2 id="msg">Welcome to Cart!</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 class="text-center text-white btn btn-success btn-block" id="addItem">
+                                    Add to Cart 
+                                    <i class="fa fa-plus-circle"></i>
+                                </h2>
+                            </div>
+                            <div class="col-md-6">
+                                <h2 class="text-center text-white btn btn-danger btn-block" id="removeItem">
+                                    Remove from Cart 
+                                    <i class="fa fa-minus-circle"></i>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-primary">
+                        <h2 class="text-center text-white" id="tMsg">
+                            Total Product:  <span id="total">10</span> 
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- script -->
+    <script src="../JS/cart.js"></script>
+</body>
+</html>

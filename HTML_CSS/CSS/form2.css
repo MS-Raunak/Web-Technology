@@ -1,0 +1,21 @@
+div{
+    width: 400px;
+    margin: auto;
+    background: rgb(225, 226, 227);
+}
+
+td{
+    padding: 5px;
+
+}
+
+legend{
+    font-weight: bold;
+    color: red;
+}
+
+form{
+
+    background-color: aliceblue;
+}
+

@@ -1,0 +1,108 @@
+
+Navbar.jsx
+===========
+
+import React from "react"
+import "./Navbar.css"  // to link external css file
+
+const Navbar = () => {
+/*    return(
+        <div>
+            <h2>{10+20}</h2>
+            {console.log("Hello, Console speaking!")}
+            <div>
+               {10>5 ? <h1>True</h1> : <h1>False</h1>}
+            <span>Welcome to React</span>
+            </div>
+
+        </div>
+    )
+*/
+
+/*
+    if(5>10){
+        return(
+            <div>If is workin</div>
+        )
+    }
+    else{
+        return(
+            <div className="else">ELse is working</div>
+        )
+    }
+*/
+ 
+const fruits = ["apple", "orange", "grapes", "banana"]
+const pstyle = {
+    background: "red",
+    color: "green"
+}
+const num = 10
+const mul = []
+for(let i=1; i<=num; i++){   // outside jsx we can write loop
+    mul.push(<li>{num*i}</li>)
+}
+console.log(mul)
+    return (
+        <div>
+            <h1 id="list">List Of Fruits</h1>
+            <h1>
+                {      // inside jsx we can't write loop bt we can use methods
+                    fruits.map(e => {
+                        return <li className="list-items">{e}</li>// instead of class, use className in jsx
+                    })
+                }
+            </h1>
+
+            <h1>{mul}</h1>
+            <p style={{
+                background:"red",
+                 color:"white",
+                 height : "100px"
+                }}>JSX Inline CSS</p>
+            <p style={pstyle}>Helllllllllllllllll</p>
+        </div>)
+        
+    
+}
+
+export default Navbar;
+
+
+================================================================================
+Navbar.css
+==========
+.list-items{
+    background: brown;
+    color: white;
+}
+
+#list{
+    background: chartreuse;
+    color: black;
+}
+
+================================================================================
+App.js
+======
+
+import React from "react"
+import Navbar from "./Navbar"
+import Logo from "./Logo"
+
+function App(){
+
+  // since we can't return multiple values together therefore we need to wrap multiple elements  in a single parent tag
+  return(
+    <div>
+      <Navbar></Navbar>
+      <Logo/>
+      <h2>This is  App Component
+      <p>I'm a function Component</p>
+      </h2>
+    </div>
+
+  )
+}
+
+export default App;

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+
+    <style>
+        .calculator{
+            margin: 50px auto;
+            background-color: rgb(59, 3, 59);
+            box-shadow: 0 0 15px red;
+            color: white;
+            height: 600px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            height: 70px;
+            width: 70px;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 50%;
+            background-color: coral;
+        }
+        .operator{
+            background-color:greenyellow;
+        }
+        #equal{
+            background-color: rgb(226, 226, 2);
+        }
+        #ac{
+            background-color: red;
+        }
+        #del{
+            background-color: rgb(173, 113, 4);
+        }
+        #input{
+            display: inline-block;
+            height: 80px;
+            width: 300px;
+            margin-bottom: 20px;
+            font-size: 30px;
+            color: black;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="input-box">
+            <input type="text" name="" id="input">
+        </div>
+        <div class="buttons">
+           <div>
+            <button class="btn" id="ac">AC</button>
+            <button class="btn" id="del">DEL</button>
+            <button class="btn operator">%</button>
+            <button class="btn operator">/</button>
+           </div>
+          <div>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn operator">*</button>
+          </div>
+          <div>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn operator">-</button>
+          </div>
+        <div>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn operator">+</button>
+        </div>
+        <div>
+            <button class="btn">00</button>
+            <button class="btn">0</button>
+            <button class="btn">.</button>
+            <button class="btn" id="equal">=</button>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        let inputBox=document.querySelector("#input")
+        let btn=document.querySelectorAll(".btn")
+        let str=""
+        // console.log(inputBox,btn);
+
+        btn.forEach((e)=>{
+            e.addEventListener("click",(event)=>{
+                console.log(event.target.innerText);
+                let value=event.target.innerText;
+                if(value =="="){
+                    let res=eval(str);
+                    inputBox.value=""+res
+                }
+                else if(value=="AC"){
+                    str=""
+                    inputBox.value=str
+                }
+                else if(value=="DEL"){
+                    str=str.slice(0,str.length-1)
+                    inputBox.value=str
+                }else{
+                    str+=value
+                    inputBox.value=str
+                }
+             
+
+            })
+        })
+
+
+    </script>
+</body>
+
+</html>

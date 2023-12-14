@@ -1,0 +1,44 @@
+<html>
+    <script>
+//     call by value
+
+        // with no argument:  return copy of original array
+        let num = [1,2,3,4,5];
+        let res = num.slice();  
+        console.log(res);       //  [1,2,3,4,5]
+
+        res[0] = 100;
+        //console.log(res);       // [100, 2, 3, 4, 5]
+        //console.log(num);      // [1, 2, 3, 4, 5]
+
+        // with one orgument : start searching from given indexN
+            let res1 = num.slice(2) 
+            console.log(res1);   // [3, 4, 5]
+
+        // with two argument : search ele b/w 1st given index to last given index(startIndex inclusive,lastIndex outclusive)
+            let res2 = num.slice(1,3) // index 1 to 5
+        console.log(res2);  // [2,3];
+
+
+        console.log("CALL BY REFERENCE STARTING");
+
+// call by reference
+        let arr = [1,2,3,4,5];
+        let arr2 = arr;
+        console.log(arr);
+        console.log(arr2);
+
+        console.log(arr==arr2); // true(both ref have same address)
+        
+    </script>
+</html>
+
+/*
+   slice() method is a method which accepts two parameters and return a subarray or shallow copy of original array based on given arguments.
+
+   * All the parameter is optional in slice method.
+   * with single parameter it will start counting from given index value and then return subarray of original array.
+
+   * with 2 parameter it will start counting between given first index and lastIndex where first arg(first index) is inclusive and last index is exclusive.
+
+*/

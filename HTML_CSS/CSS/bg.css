@@ -1,0 +1,36 @@
+div{
+    border: 5px solid red;
+    height: 65px;
+    width: 65px;
+    margin: 8px;
+    background:url("/img/flag.jpg");
+    background-size: cover;
+}
+
+#f{
+    margin-left: 150px;
+}
+#c{
+    margin-left: 130px;
+}
+
+#b{
+    margin-left: 220px;
+    margin-top: -20px;
+
+}
+#h{
+    margin-left: 230px;
+}
+#d{
+    margin-top: -110px;
+}
+#e{
+    margin-top: 38px;
+}
+#g{
+    margin-top: -40px;
+}
+#i{
+    margin-top: -40px;
+}

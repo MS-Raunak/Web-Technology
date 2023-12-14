@@ -1,0 +1,89 @@
+
+body{
+    background: url("bg.img") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#form{
+    /* border: 2px solid red; */
+    background:linear-gradient(45deg, yellow,red);
+    width: 350px;
+    height: 350px;
+    padding: 40px  0px 0px;
+    margin: 100px auto;
+    box-shadow: 0 0 5px red ;
+    position: relative;
+    border-radius: 2px;
+}
+
+#icon{
+    border: 5px solid red;
+    width: 60px;
+    height: 60px;
+   position: absolute;
+   top: -20px;
+   left: 140px;
+   text-align: center;
+   border-radius: 50%;
+   color: lightgreen;
+   background-color: white;
+   box-shadow: 0 0 10px red;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea
+{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    margin-top: 8px;
+    width: 70%;
+    padding: 8px;
+    color: white;
+    margin-left: 50px;
+    padding-left: 0px;
+    
+}
+textarea{
+    resize: none;
+}
+
+select{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    margin-top: 2px;
+    width: 73%;
+    margin-left: 50px;
+    padding-left: 0px;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+}
+option{
+    background:rgb(230, 89, 89);
+}
+
+input[type=submit]{
+    outline: none;
+    border: none;
+    margin-top: 11px;
+    width: 73%;
+    margin-left: 50px;
+    padding: 10px;
+    background:linear-gradient(360deg, yellow, green);
+    box-shadow: 0 0 10px yellow;
+    border-radius: 4px;
+    
+}
+input::placeholder,textarea::placeholder{
+    color: rgb(247, 247, 247);
+}
+
+select:hover,input[type=submit]:hover{
+    cursor: pointer;
+}

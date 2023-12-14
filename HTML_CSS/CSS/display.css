@@ -1,0 +1,32 @@
+.defaultBlock{
+  background-color: aqua;
+  padding: 5px;
+  margin-bottom: 50px;
+}
+.setInline{
+    background-color: aqua;
+    display: inline;
+    padding: 30px;
+    /* width: 300;  we cant use width with inline*/
+}
+
+.defaultInline{
+    background-color: aquamarine;
+}
+.setBlock{
+    margin: 50px;
+    display: block;
+    background-color: aquamarine;
+    /* Can use width property */
+}
+
+.defaultInlineBlock{
+    background-color: rgb(165, 165, 77);
+    display: inline-block;
+}
+
+.setInlineBlock{
+    background-color: rgb(165, 165, 77);
+    display: inline-block;
+    width: 500px;
+}

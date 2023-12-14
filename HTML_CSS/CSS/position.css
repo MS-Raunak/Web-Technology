@@ -1,0 +1,43 @@
+.position{
+    text-align: center;
+    color: red;
+    padding: 15px;
+}
+
+.static{
+    position: static;
+    border: 2px solid red;
+    top: 200;  /* Not working with static position*/
+    left: 200; /* Not working with static position*/
+    width: 200px;
+    background: linear-gradient(to right, green,yellow,orange);
+}
+
+.relative{
+    position: relative;
+    top: -100px;
+    left: 250px;
+    /* margin: auto; */
+    width: 200px;
+    background: linear-gradient(to right, green,white, orange);
+}
+
+.fixed{
+    position: fixed;
+    top: 450px;
+    left: 390px;
+    width: 200px;
+    background: linear-gradient(to left, green,rgb(31, 31, 3),orange);
+}
+
+.sticky{
+    position: sticky;
+    top: 0px;
+    display: block;
+    background: linear-gradient(to right, red,yellow,orange);
+}
+
+.content{
+    margin: 20px;
+    background-color: rgb(239, 241, 243);
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        // Array Destructuring
+        let arr = ["apple", "grapes", "banana"]
+       
+       // let [a,b,c] = arr
+        //console.log(a,b,c); // apple grapes banana
+        let [a,b] = arr
+        console.log(a,b); // apple grapes
+        console.log(arr); // ['apple', 'grapes', 'banana'];
+
+
+
+        // Object Destructuring
+        let obj = {name: "chhaya", address: "KGF", age: 2}
+        let {name, age} = obj
+        console.log(name); // chhaya
+        console.log(age);  // 2
+    </script>
+</body>
+</html>

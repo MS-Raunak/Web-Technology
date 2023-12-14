@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+}
+#main-container{
+    /* border: 2px solid red; */
+    background: linear-gradient(45deg, lightgreen, yellow);
+    width: 100%;
+    height: 560px;
+    position: relative;
+}
+
+#game{
+    /* border: 2px solid red; */
+    position: absolute;
+    transform: translate(50px, 140px);
+}
+#game>h2{
+    top: 200px;
+    left: 100px;
+    font-size: 2rem;
+}
+#des{
+    position: absolute;
+    transform: translate(150px, 220px);
+    background-color: coral;
+    width: 204px;
+    border-radius: 8px;
+}
+#des>h2{  
+    font-size: 2rem;
+     padding: 2px;
+}
+
+#img-box{
+    display: inline-block;
+    width: 320px;
+    height: 350px;
+    transform: translate(800px, 100px);
+    border: 5px solid coral;
+    padding: 10px;
+    position: relative;
+}
+#img-box >img{
+    position: absolute;
+    width: 320px;
+    height: 350px;
+}
+
+#main-container2{
+    margin-top: 20px;
+    background-color: aliceblue;
+    height: 560px;
+}
+
+#img-container{
+    margin-top: 10px;
+    display: inline-block;
+    border: 5px solid coral;
+    padding: 15px;
+    width: 390px;
+    height: 400px;
+    margin-left: 10px;
+}
+#img-container>img{
+    width: 100%;
+    height: 100%;
+}
+#content{
+    margin-top: 10px;
+    /* border: 5px solid red; */
+    display: inline-block;
+    width: 620px;
+    height: 330px;
+    position: absolute;
+    transform: translate(200px);
+}
+#content>p{
+    line-height: 20px;
+    font-size: 1.1rem;
+}
+
+#content>#heading{
+    background-color: antiquewhite;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 20px;
+}
+#heading>h1{
+    padding: 6px;
+}
+
+
+#main-container3{
+    margin-top: 20px;
+    background-color: rgb(249, 250, 250);
+    height: 560px;
+}
+
+#img-container1{
+    margin-top: 10px;
+    display: inline-block;
+    border: 5px solid coral;
+    padding: 15px;
+    width: 390px;
+    height: 400px;
+    position: absolute;
+    transform: translate(200px);
+}
+#img-container1>img{
+    width: 100%;
+    height: 100%;
+}
+#content1{
+    margin-top: 10px;
+    /* border: 5px solid red; */
+    display: inline-block;
+    width: 620px;
+    height: 330px;
+}
+#content1>p{
+    line-height: 20px;
+    font-size: 1.1rem;
+}
+
+#content1>#heading1{
+    background-color: antiquewhite;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 20px;
+}
+#heading1>h1{
+    padding: 6px;
+}
+

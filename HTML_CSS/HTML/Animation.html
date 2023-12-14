@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background: #000;
+            height: 100vh;
+
+        }
+        div>span{
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            border: 2px solid white;
+            box-shadow: 0px -5px 10px white;
+            margin-top: 270px;
+            margin-left: 150px;
+            /* border-radius: 100%; */
+
+            animation: square 3s infinite ease-in-out  0s;
+        }
+        div>span:first-child{
+            background-color: aqua;
+           animation-delay: 0.2s;
+        }
+        div>span:nth-child(2){
+            background-color: aquamarine;
+            animation-delay: 0.3s;
+        }
+        div>span:nth-child(3){
+            background-color: red;
+            animation-delay: 0.4s;
+        }
+        div>span:nth-child(4){
+            background-color: greenyellow;
+            animation-delay: 0.5s;
+        }
+        div>span:last-child{
+            background-color: yellow;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes square{
+            0%,100%{
+                transform: translateY(-250px);
+            }
+            25%{
+                transform: translateY(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body{
+    margin: 0px;
+}
+
+div{
+    background-color: black;
+    padding: 20px;
+   text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: orange;
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+a:hover{
+    box-shadow: 0px 0px 10px 0px white;
+    /* box-shadow: 20px 20px 20px 10px red; */
+}
